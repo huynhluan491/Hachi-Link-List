@@ -1,0 +1,26 @@
+.dashboard-wrapper {
+    width: 100%;
+    .content-layout {
+        display: flex;
+        width: 100%;
+        gap: 0.5rem;
+        .side-bar {
+            background-color: #5a6276;
+            width: 22rem;
+            .title {
+                color: #ffff;
+                font-size: 1.3rem;
+                width: 100%;
+                background-color: #1a2334;
+                margin-top: 2rem;
+                padding-left: 5rem;
+                padding: 0.5rem 0 0.5rem 5rem;
+                border-left: 3px solid #ffff;
+            }
+        }
+
+        .dashboard-content {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,113 @@
+.wrapper {
+    background-color: #fff;
+    position: fixed;
+    z-index: 999999;
+    width: 35%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    cursor: pointer;
+    .form-header {
+        padding: 8px 0 11px 34px;
+        border-bottom: 1px solid #000000;
+        .title {
+            font-size: 1.3rem;
+            color: #1a6634;
+            font-weight: 600;
+        }
+    }
+
+    .form-wrapper {
+        padding: 14px 0 0 18px;
+        .cate-box {
+            padding-bottom: 16px;
+            .cate-title {
+                font-size: 1.3rem;
+                color: #343a40;
+                font-weight: 600;
+                padding-bottom: 10px;
+            }
+            .checkbtn-wrapper {
+                display: flex;
+                gap: 10px;
+
+                .type-check-btn {
+                    display: flex;
+                    gap: 11px;
+                    align-items: center;
+                    input {
+                        width: 12px;
+                        height: 13px;
+                    }
+
+                    label {
+                        color: #26282e;
+                        font-size: 1.3rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        .form-content-wrapper {
+            .description-box {
+                color: #343a40;
+                font-size: 1.3rem;
+                font-weight: 600;
+
+                textarea {
+                    margin: 8px 0;
+                    width: 380px;
+                    border: 2px solid #dbdee7;
+                    height: 34px;
+                    padding-left: 5px;
+                    resize: none;
+                }
+            }
+
+            .old-site-box,
+            .new-site-box {
+                color: #343a40;
+                font-size: 1.3rem;
+                font-weight: 600;
+
+                textarea {
+                    margin: 8px 0;
+                    width: 380px;
+                    border: 2px solid #dbdee7;
+                    height: 93px;
+                    padding-left: 5px;
+                    resize: none;
+                }
+            }
+        }
+
+        .action-wrapper {
+            display: flex;
+            gap: 7px;
+            .close-btn,
+            .update-btn {
+                width: 94px;
+                font-size: 1.3rem;
+                border-radius: 3px;
+                font-weight: 600;
+            }
+
+            .close-btn {
+                background-color: #fff;
+                color: #1a6634;
+                box-shadow: 0px 5px 6px 0px #5a62764d;
+                padding: 15px 0;
+            }
+
+            .update-btn {
+                background-color: #1a6634;
+                color: #fff;
+                box-shadow: 0px 5px 6px 0px #5a62764d;
+                padding: 10px 0;
+            }
+        }
+    }
+}

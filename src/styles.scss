@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'normalize.css';
+@import '~bootstrap/dist/css/bootstrap.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    --bs-pagination-focus-box-shadow: transparent;
+}
+
+.root::-webkit-scrollbar {
+    // display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-y: overlay;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    color: var(--text-color);
+    overflow: hidden;
+}
+
+ul {
+    padding-left: 0 !important;
+    margin: 0 !important;
+}
+
+li {
+    list-style-type: none;
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0 !important;
+    line-height: unset !important;
+}
+
+button {
+    background-color: transparent;
+}
+
+a[href] {
+    color: var(--text-color);
+    text-decoration: none;
+
+    &:hover {
+        color: black;
+    }
+}
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

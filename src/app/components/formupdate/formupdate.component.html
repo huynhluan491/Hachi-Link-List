@@ -1,0 +1,74 @@
+<div class="wrapper">
+    <div class="form-header">
+        <p class="title">DEAD LINK</p>
+    </div>
+    <form [formGroup]="myForm" class="form-wrapper">
+        <div class="cate-box">
+            <p class="cate-title">Phân loại</p>
+            <div class="checkbtn-wrapper">
+                <div class="type-check-btn">
+                    <input
+                        type="radio"
+                        id="product"
+                        name="linkType"
+                        ngDefaultControl
+                        value="product"
+                        formControlName="linkType"
+                    />
+                    <label for="link">Dead link sản phẩm</label>
+                </div>
+                <div class="type-check-btn">
+                    <input
+                        type="radio"
+                        id="post"
+                        name="linkType"
+                        value="post"
+                        ngDefaultControl
+                        formControlName="linkType"
+                    />
+                    <label for="link">Dead link bài viết & khác</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-content-wrapper">
+            <div class="description-box">
+                <p class="box-title">Mô tả link</p>
+                <textarea
+                    formControlName="description"
+                    name="description"
+                    type="text"
+                    placeholder="Nhập thông tin mô tả"
+                    rows="4"
+                    cols="50"
+                    ngDefaultControl
+                ></textarea>
+            </div>
+            <div class="old-site-box">
+                <p class="box-title">Link site cũ</p>
+                <textarea
+                    type="text"
+                    name="oldSite"
+                    rows="4"
+                    ngDefaultControl
+                    formControlName="oldSite"
+                    cols="50"
+                ></textarea>
+            </div>
+            <div class="new-site-box">
+                <p class="box-title">Link site mới</p>
+                <textarea
+                    type="text"
+                    name="newSite"
+                    rows="4"
+                    ngDefaultControl
+                    cols="50"
+                    formControlName="newSite"
+                ></textarea>
+            </div>
+        </div>
+        <div class="action-wrapper">
+            <button class="close-btn" type="button" (click)="handleClose($event)">ĐÓNG</button>
+            <button class="update-btn" (click)="handleOnSubmit()">CẬP NHẬT</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,53 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    padding-left: 15px;
+    padding-right: 7px;
+    .filter-action {
+        display: flex;
+        gap: 10px;
+        .filter-box {
+            display: flex;
+            border: 2px solid #008000;
+            border-radius: 14px;
+            width: 197px;
+            height: 28px;
+            font-size: 1.3rem;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+            color: #959db3;
+        }
+    }
+
+    .link-action {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .action-btn {
+            display: flex;
+            padding: 9px 10px;
+            background-color: white;
+            border-radius: 3px;
+            gap: 8px;
+            font-weight: 600;
+            p {
+                font-size: 13px;
+                color: #959db3;
+            }
+        }
+
+        .add-btn {
+            display: flex;
+            gap: 5px;
+            background-color: #1a6634;
+            color: white;
+            padding: 9px 10px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            border-radius: 3px;
+        }
+    }
+}
