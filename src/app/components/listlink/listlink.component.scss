@@ -38,10 +38,11 @@
         align-items: center;
 
         .old-col {
-            width: 462px;
+            width: 50%;
             font-size: 1.3rem;
             font-weight: 400;
             color: #26282e;
+            padding-right: 3.4rem;
         }
 
         .description-col {
@@ -49,9 +50,11 @@
             font-size: 1.3rem;
             font-weight: 400;
             color: #26282e;
+            width: 20%;
 
             input {
-                padding-right: 13px;
+                margin-right: 13px;
+                margin-top: 1px;
             }
         }
 

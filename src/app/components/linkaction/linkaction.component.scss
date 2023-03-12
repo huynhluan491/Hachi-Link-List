@@ -51,3 +51,20 @@
         }
     }
 }
+
+// .type-checkbox {
+//     background-color: #008000;
+// }
+
+// .type-checkbox:checked {
+//     background-color: #008000;
+//     color: white;
+// }
+
+input[type='checkbox'].type-checkbox:checked {
+    accent-color: #008000;
+}
+
+input[type='checkbox']:hover {
+    accent-color: unset;
+}

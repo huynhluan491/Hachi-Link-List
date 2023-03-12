@@ -87,7 +87,6 @@ export class ListlinkService {
         };
 
         this.listLink$.next([...this.listLink$.value, newObjectLink]);
-        window.alert('ADD SUCCESSFULLY');
     };
 
     editLink = (id: number, newlink: { type: string; description: string; oldLink: string; newLink: string }) => {
@@ -111,7 +110,6 @@ export class ListlinkService {
     deleteLink = (id: number) => {
         const deletedLink = this.listLink$.value.filter((list) => list.id !== id);
         this.listLink$.next(deletedLink);
-        window.alert('DELETE SUCCESSFULLy');
     };
 
     deleteSelectedList(ids: number[]): Observable<Link[]> {

@@ -2,11 +2,23 @@
     <div class="filter-action">
         <div class="filter-box">
             <p class="title">Dead link Sản phẩm</p>
-            <input type="checkbox" value="product" (click)="handleShowProduct($event)" [checked]="isProduct" />
+            <input
+                class="type-checkbox"
+                type="checkbox"
+                value="product"
+                (click)="handleShowProduct($event)"
+                [checked]="isProduct"
+            />
         </div>
         <div class="filter-box">
             <p class="title">Dead link bài viết & khác</p>
-            <input type="checkbox" value="post" (click)="handleShowPost($event)" [checked]="isPost" />
+            <input
+                class="type-checkbox"
+                type="checkbox"
+                value="post"
+                (click)="handleShowPost($event)"
+                [checked]="isPost"
+            />
         </div>
     </div>
     <div class="link-action">
